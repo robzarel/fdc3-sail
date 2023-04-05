@@ -8,6 +8,7 @@
   "main": "packages/main/dist/index.cjs",
   "scripts": {
     "start": "npm run watch",
+    "start-local": "SAIL_DIRECTORY_URL=directory/lbp.json npm start",
     "start:directory": "node directory/dist/index.js",
     "build": "npm run build:main && npm run build:preload && npm run build:renderer",
     "build:main": "cd ./packages/main && vite build",

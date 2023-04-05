@@ -1,0 +1,71 @@
+{
+  "applications": [
+    {
+      "appId": "earth",
+      "name": "earth",
+      "title": "planet earth",
+      "description": "Demo fdc3: earth",
+      "icons": [
+        {
+          "src": "https://raw.githubusercontent.com/finos/FDC3-Sail/main/images/logo_bg_white_2x.png"
+        }
+      ],
+      "screenshots": [],
+      "type": "web",
+      "details": {
+        "url": "https://robzarel.github.io/fdc3-earth/"
+      },
+      "interop": {
+        "intents": {
+          "raises": {
+            "ViewContact": {
+              "contexts": [
+                "fdc3.contact"
+              ],
+              "displayName": "View Contact"
+            }
+          }
+        }
+      },
+      "hostManifests": {
+        "sail": {
+          "injectApi": "1.2"
+        }
+      }
+    },
+    {
+      "appId": "mars",
+      "name": "mars",
+      "title": "planet mars",
+      "description": "Demo fdc3 mars",
+      "icons": [
+        {
+          "src": "https://raw.githubusercontent.com/finos/FDC3-Sail/main/images/logo_bg_white_2x.png"
+        }
+      ],
+      "screenshots": [],
+      "type": "web",
+      "details": {
+        "url": "https://robzarel.github.io/fdc3-mars/"
+      },
+      "interop": {
+        "intents": {
+          "listensFor": {
+            "ViewContact": {
+              "displayName": "View Contact",
+              "contexts": [
+                "fdc3.contact"
+              ]
+            }
+          }
+        }
+      },
+      "hostManifests": {
+        "sail": {
+          "injectApi": "1.2"
+        }
+      }
+    }
+  ],
+  "message": "OK"
+}
